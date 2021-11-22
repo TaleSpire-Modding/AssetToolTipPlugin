@@ -1,12 +1,12 @@
-# Max Draw Distance Plugin
-Can't see far enough? with this plugin you'll be able to see the end of the world!
+# Asset Tool Tip Plugin
+This plugin allows you to view the name of an asset as you hover over it.
 
 ## Install
-
 Currently you need to either follow the build guide down below or use the R2ModMan. 
 
 ## Usage
-The config of this plugin allows to adjust your draw distance using a float.
+By hovering over an asset's image in an asset browser, a tooltip will provide the asset's current name.
+This is compatible with EAR & EAL, but is not required.
 
 ## Changelog
 - 1.0.0: Initial release
