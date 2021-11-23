@@ -17,13 +17,15 @@ namespace AssetToolTip.Patches
             }
         }
 
-        public static void Postfix(ref List<Button> ____buttons)
+        public static void Postfix(UI_SwitchButtonGroup __instance, ref List<Button> ____buttons)
         {
-            foreach (var button in ____buttons)
-            {
-                var TextOnHover = button.gameObject.AddComponent<MouseTextOnHover>();
-                items.Add(TextOnHover);
-                SetText(TextOnHover);
+            if (__instance.gameObject.name == "Catagory") { 
+                foreach (var button in ____buttons)
+                {
+                    var TextOnHover = button.gameObject.AddComponent<MouseTextOnHover>();
+                    items.Add(TextOnHover);
+                    SetText(TextOnHover);
+                }
             }
         }
 
