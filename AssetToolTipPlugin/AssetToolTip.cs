@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace AssetToolTip
 {
-    [BepInPlugin(Guid, "HolloFoxe's Asset Tool Tip", Version)]
+    [BepInPlugin(Guid, "HolloFoxes' Asset Tool Tip", Version)]
     public class AssetToolTip : BaseUnityPlugin
     {
         // constants
