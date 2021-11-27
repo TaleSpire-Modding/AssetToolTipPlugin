@@ -1,0 +1,36 @@
+name: Push to nuget feed on release
+
+on:
+  push
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Nuget
+        uses: nuget/setup-nuget@v1
+
+      # Checks-out private repo of dll's
+      - name: Check out my other private repo
+        uses: actions/checkout@master
+        with:
+          repository: TaleSpire-Modding/AutomationDlls
+          token: ${{ secrets.dll_pat }}          
+
+      - name: build
+        run: dotnet build
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: AssetToolTip.dll
+          path: AssetToolTipPlugin\bin\Debug\ConfigurationManager.dll
+
+#       - name: List
+#         run: |
+#           cd artifacts
+#           dir
