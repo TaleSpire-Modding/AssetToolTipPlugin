@@ -29,17 +29,17 @@ jobs:
           path: .
           repo: TaleSpire-Modding/AutomationDlls
 
+      - name: Remove old artifacts
+        uses: c-hive/gha-remove-artifacts@v1
+        with:
+          age: '0 month'
+
       - name: build
         run: |
           cd AssetToolTipPlugin
           dotnet restore AssetToolTipPluginPipeline.csproj
           dotnet build AssetToolTipPluginPipeline.csproj
-
-      - uses: actions/upload-artifact@master
-        with:
-          name: AssetToolTip
-          path: AssetToolTipPlugin\bin\Debug\AssetToolTip.dll
-      
+     
       - uses: actions/upload-artifact@master
         with:
           name: dlls
