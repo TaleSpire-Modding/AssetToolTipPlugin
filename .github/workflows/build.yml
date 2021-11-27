@@ -37,6 +37,7 @@ jobs:
           dir
           cd AssetToolTipPlugin
           dir
+          dotnet restore AssetToolTipPluginPipeline.csproj
           dotnet build AssetToolTipPluginPipeline.csproj
 
       - uses: actions/upload-artifact@v2
