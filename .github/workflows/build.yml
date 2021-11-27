@@ -28,10 +28,6 @@ jobs:
           branch: master
           path: .
           repo: TaleSpire-Modding/AutomationDlls
-      - run: |
-          cd dlls
-          dir
-          cd ..
 
       - name: build
         run: |
