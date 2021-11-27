@@ -26,7 +26,6 @@ jobs:
           github_token: ${{ secrets.dll_pat }}
           workflow: build.yml
           branch: master
-          name: dlls
           path: .
           repo: TaleSpire-Modding/AutomationDlls
       - run: |
