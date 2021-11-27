@@ -25,6 +25,7 @@ jobs:
       - name: build
         run: |
           cd AssetToolTipPlugin
+          dir
           dotnet build AssetToolTipPluginPipeline.csproj
 
       - uses: actions/upload-artifact@v2
