@@ -23,7 +23,7 @@ jobs:
           token: ${{ secrets.dll_pat }}          
 
       - name: build
-        run: dotnet build
+        run: dotnet build AssetToolTipPlugin\AssetToolTipPluginPipeline.csproj
 
       - uses: actions/upload-artifact@v2
         with:
