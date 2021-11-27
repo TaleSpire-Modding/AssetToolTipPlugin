@@ -40,10 +40,10 @@ jobs:
           dotnet restore AssetToolTipPluginPipeline.csproj
           dotnet build AssetToolTipPluginPipeline.csproj
 
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@master
         with:
-          name: AssetToolTip.dll
-          path: AssetToolTipPlugin\bin\Debug\ConfigurationManager.dll
+          name: AssetToolTip
+          path: AssetToolTipPlugin\bin\Debug\AssetToolTip.dll
 
 #       - name: List
 #         run: |
