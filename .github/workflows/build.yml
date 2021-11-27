@@ -33,7 +33,7 @@ jobs:
         #src: https://github.com/marketplace/actions/download-workflow-artifact
         uses: dawidd6/action-download-artifact@v2
         with:
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{ secrets.dll_pat }}
           workflow: build.yml
           branch: master
           name: dlls
