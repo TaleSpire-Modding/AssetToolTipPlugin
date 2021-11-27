@@ -36,6 +36,7 @@ jobs:
           github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: build.yml
           branch: master
+          name: dlls
           path: .
           repo: TaleSpire-Modding/TaleSpire.ConfigurationManager
 
