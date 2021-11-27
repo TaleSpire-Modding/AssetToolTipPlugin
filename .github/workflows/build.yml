@@ -31,9 +31,7 @@ jobs:
 
       - name: build
         run: |
-          dir
           cd AssetToolTipPlugin
-          dir
           dotnet restore AssetToolTipPluginPipeline.csproj
           dotnet build AssetToolTipPluginPipeline.csproj
 
