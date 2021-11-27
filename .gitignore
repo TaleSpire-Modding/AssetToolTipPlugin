@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /TaleSpireDlls
 /BepinexDlls
+/dlls/TaleSpireDlls
+/dlls/BepinexDlls

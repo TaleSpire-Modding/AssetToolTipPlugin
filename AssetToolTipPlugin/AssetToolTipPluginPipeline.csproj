@@ -34,88 +34,88 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BepinexDlls\0Harmony.dll</HintPath>
+      <HintPath>..\dlls\BepinexDlls\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx, Version=5.4.9.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BepinexDlls\BepInEx.dll</HintPath>
+      <HintPath>..\dlls\BepinexDlls\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.BouncePackage.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.BouncePackage.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.BouncePackage.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.BouncePackage.TaleSpire.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.BouncePackage.TaleSpire.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.BouncePackage.TaleSpire.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.BouncePhysics.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.BouncePhysics.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.BouncePhysics.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.MiniZ.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.MiniZ.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.MiniZ.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.PicoHash.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.PicoHash.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.PicoHash.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.TaleSpire.3rdParty.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.TaleSpire.3rdParty.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.TaleSpire.3rdParty.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.TaleSpire.AssetManagement, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.TaleSpire.AssetManagement.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.TaleSpire.AssetManagement.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.TaleSpire.BounceTools.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.TaleSpire.BounceTools.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.TaleSpire.BounceTools.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.TaleSpire.DataModel.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.TaleSpire.DataModel.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.TaleSpire.DataModel.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Bouncyrock.TaleSpire.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Bouncyrock.TaleSpire.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Bouncyrock.TaleSpire.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Cinemachine.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.10.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BepinexDlls\Mono.Cecil.dll</HintPath>
+      <HintPath>..\dlls\BepinexDlls\Mono.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.RuntimeDetour, Version=21.1.11.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BepinexDlls\MonoMod.RuntimeDetour.dll</HintPath>
+      <HintPath>..\dlls\BepinexDlls\MonoMod.RuntimeDetour.dll</HintPath>
     </Reference>
     <Reference Include="MonoMod.Utils, Version=21.1.11.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BepinexDlls\MonoMod.Utils.dll</HintPath>
+      <HintPath>..\dlls\BepinexDlls\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="MoreLinq, Version=3.3.2.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\MoreLinq.dll</HintPath>
+      <HintPath>..\dlls\lib\MoreLinq.dll</HintPath>
     </Reference>
     <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\NCalc.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\NCalc.dll</HintPath>
     </Reference>
     <Reference Include="netstandard" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\dlls\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D, Version=4.1.4.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Photon3Unity3D.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="ShapesRuntime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\ShapesRuntime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\ShapesRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -136,163 +136,163 @@
     <Reference Include="System.Xml.XPath.XDocument" />
     <Reference Include="Unity.Animation.Rigging, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Animation.Rigging.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Animation.Rigging.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Burst.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Collections.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Entities.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.InputSystem.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Localization, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Localization.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Localization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Mathematics.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Extensions, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Mathematics.Extensions.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Mathematics.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Extensions.Hybrid, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Physics, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Physics.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Physics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.Hybrid, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Rendering.Hybrid.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Rendering.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.ResourceManager.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\Unity.Timeline.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.TextCoreModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TaleSpireDlls\UnityEngine.VRModule.dll</HintPath>
+      <HintPath>..\dlls\TaleSpireDlls\UnityEngine.VRModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
