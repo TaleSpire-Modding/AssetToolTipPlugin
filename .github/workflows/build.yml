@@ -36,9 +36,8 @@ jobs:
           github_token: ${{ secrets.dll_pat }}
           workflow: build.yml
           branch: master
-          name: dlls
           path: .
-          repo: TaleSpire-Modding/TaleSpire.ConfigurationManager
+          repo: TaleSpire-Modding/AutomationDlls
 
 #       - uses: actions/download-artifact@master
 #         with:
