@@ -5,7 +5,7 @@ on:
     branches:
       - master
   repository_dispatch:
-    types: [regress_update]
+    types: [TaleSpire-Modding-Pipelines/AutomationDlls]
   
 jobs:
   build:
