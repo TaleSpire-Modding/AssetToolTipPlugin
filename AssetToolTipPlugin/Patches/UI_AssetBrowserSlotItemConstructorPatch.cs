@@ -3,6 +3,8 @@ using HarmonyLib;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using Bounce.ManagedCollections;
+using Bounce.TaleSpire.AssetManagement;
 using MoreLinq;
 
 namespace AssetToolTip.Patches
@@ -27,11 +29,21 @@ namespace AssetToolTip.Patches
 
         private static void LoadDictionary()
         {
-            TextLookup = AssetDb.GetAllGroups()
-                .SelectMany(g => g.Item2)
-                .SelectMany(g => g.Entries)
-                .DistinctBy(g => g.Id)
-                .ToDictionary(g => g.Id, g => g.Name);
+            foreach (var creature in AssetDb.Creatures)
+            {
+                if (!TextLookup.ContainsKey(creature.Key))
+                {
+                    TextLookup.Add(creature.Key,creature.Value.Value.Name.ToString());
+                }   
+            }
+
+            foreach (var placeable in AssetDb.Placeables)
+            {
+                if (!TextLookup.ContainsKey(placeable.Key))
+                {
+                    TextLookup.Add(placeable.Key, placeable.Value.Value.Name.ToString());
+                }
+            }
         }
 
         private static void Postfix(UI_AssetBrowserSlotItem __instance, NGuid ____nGuid)
