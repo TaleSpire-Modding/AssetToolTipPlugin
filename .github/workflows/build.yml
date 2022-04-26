@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  repository_dispatch:
+    types: [TaleSpire-Modding-Pipelines/AutomationDlls]
   
 jobs:
   build:
@@ -13,18 +15,6 @@ jobs:
     steps:
       - name: Setup Nuget
         uses: nuget/setup-nuget@v1
-
-      # Checks-out private repo of dll's
-#       - name: Check out my other private repo
-#         uses: actions/checkout@master
-#         with:
-#           repository: TaleSpire-Modding/AutomationDlls
-#           token: ${{ secrets.dll_pat }}
-      
-#       - uses: actions/upload-artifact@master
-#         with:
-#           name: dlls
-#           path: .
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -39,20 +29,20 @@ jobs:
           path: .
           repo: TaleSpire-Modding/AutomationDlls
 
-#       - uses: actions/download-artifact@master
-#         with:
-#           name: dlls
-#           path: .
+      - name: Remove old artifacts
+        uses: c-hive/gha-remove-artifacts@v1
+        with:
+          age: '0 month'
 
       - name: build
         run: |
-          dir
           cd AssetToolTipPlugin
-          dir
           dotnet restore AssetToolTipPluginPipeline.csproj
           dotnet build AssetToolTipPluginPipeline.csproj
-
+     
       - uses: actions/upload-artifact@master
         with:
-          name: AssetToolTip
+          name: dlls
           path: AssetToolTipPlugin\bin\Debug\AssetToolTip.dll
+
+      # Now need to write a deploy procedure after the Build
