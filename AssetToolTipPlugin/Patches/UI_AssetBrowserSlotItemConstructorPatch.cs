@@ -1,11 +1,7 @@
 ﻿using Bounce.Unmanaged;
 using HarmonyLib;
-using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
-using Bounce.ManagedCollections;
-using Bounce.TaleSpire.AssetManagement;
-using MoreLinq;
+using System.Reflection;
 
 namespace AssetToolTip.Patches
 {
@@ -13,35 +9,37 @@ namespace AssetToolTip.Patches
     class UI_AssetBrowserSlotItemConstructorPatch
     {
         internal static Dictionary<NGuid, string> TextLookup = new Dictionary<NGuid, string>();
-        internal static Dictionary<NGuid,MouseTextOnHover> items = new Dictionary<NGuid, MouseTextOnHover>();
+        internal static Dictionary<NGuid,MouseTextOnHover> Items = new Dictionary<NGuid, MouseTextOnHover>();
         
         internal static void refreshText(object o)
         {
             var keys = new List<NGuid>();
-            foreach (var key in items.Keys)
+            foreach (var key in Items.Keys)
             {
-                if (items[key] != null)
-                    SetText(items[key], key);
+                if (Items[key] != null)
+                    SetText(Items[key], key);
                 else keys.Add(key);
             }
-            foreach (var key in keys) items.Remove(key);
+            foreach (var key in keys) Items.Remove(key);
         }
 
         private static void LoadDictionary()
         {
             foreach (var creature in AssetDb.Creatures)
             {
-                if (!TextLookup.ContainsKey(creature.Key))
+                NGuid key = creature.Key.Value;
+                if (!TextLookup.ContainsKey(key))
                 {
-                    TextLookup.Add(creature.Key,creature.Value.Value.Name.ToString());
-                }   
+                    TextLookup.Add(key, creature.Value.Value.Name.ToString());
+                }
             }
 
             foreach (var placeable in AssetDb.Placeables)
             {
-                if (!TextLookup.ContainsKey(placeable.Key))
+                NGuid key = placeable.Key.Value;
+                if (!TextLookup.ContainsKey(key))
                 {
-                    TextLookup.Add(placeable.Key, placeable.Value.Value.Name.ToString());
+                    TextLookup.Add(key, placeable.Value.Value.Name.ToString());
                 }
             }
         }
@@ -49,8 +47,8 @@ namespace AssetToolTip.Patches
         private static void Postfix(UI_AssetBrowserSlotItem __instance, NGuid ____nGuid)
         {
             var TextOnHover = __instance.gameObject.AddComponent<MouseTextOnHover>();
-            if (!items.ContainsKey(____nGuid)) items.Add(____nGuid, TextOnHover);
-            else items[____nGuid] = TextOnHover;
+            if (!Items.ContainsKey(____nGuid)) Items.Add(____nGuid, TextOnHover);
+            else Items[____nGuid] = TextOnHover;
             
             if (TextLookup.ContainsKey(____nGuid))
             {
