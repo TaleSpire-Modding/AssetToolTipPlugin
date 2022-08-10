@@ -34,7 +34,6 @@
   <ItemGroup>
     <Compile Include="AssetToolTip.cs" />
     <Compile Include="ConfigurationManagerAttributes.cs" />
-    <Compile Include="ModdingUtil.cs" />
     <Compile Include="Patches\UI_AssetBrowserSetupCategoryPatch.cs" />
     <Compile Include="Patches\UI_AssetBrowserSlotItemConstructorPatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -664,6 +663,9 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SetInjectionFlagPlugin">
+      <HintPath>..\..\SetInjectionFlag\SetInjectionFlag\bin\Debug\SetInjectionFlagPlugin.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
