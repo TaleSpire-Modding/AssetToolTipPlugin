@@ -1,16 +1,18 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
+using PluginUtilities;
 using UnityEngine;
 
 namespace AssetToolTip
 {
     [BepInPlugin(Guid, "HolloFoxes' Asset Tool Tip", Version)]
+    [BepInDependency(SetInjectionFlag.Guid)]
     public class AssetToolTip : BaseUnityPlugin
     {
         // constants
         private const string Guid = "org.hollofox.plugins.AssetToolTip";
-        private const string Version = "1.1.0.0";
+        private const string Version = "1.1.1.0";
         internal static ConfigEntry<bool> AssetsToolTip;
         internal static ConfigEntry<bool> CategoryToolTip;
         /// <summary>
