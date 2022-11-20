@@ -1,0 +1,26 @@
+name: Push to nuget feed on release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  Build_and_Release:
+    runs-on: windows-latest
+    steps:
+      - name: Setup Nuget
+        uses: nuget/setup-nuget@v1
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: build and publish
+        run: |
+	  dotnet build
+          cd AssetToolTipPlugin
+          dotnet restore AssetToolTipPlugin.csproj
+          dotnet build AssetToolTipPlugin.csproj --configuration Release
+	  cd bin\Release
+          dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_TOKEN }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+          dotnet nuget push *.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/${{ github.repository_owner }} --skip-duplicate

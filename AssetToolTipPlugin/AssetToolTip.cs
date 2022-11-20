@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace AssetToolTip
 {
-    [BepInPlugin(Guid, "HolloFoxes' Asset Tool Tip", Version)]
+    [BepInPlugin(Guid, "Asset Tool Tip", Version)]
     [BepInDependency(SetInjectionFlag.Guid)]
     public class AssetToolTip : BaseUnityPlugin
     {
@@ -22,7 +22,7 @@ namespace AssetToolTip
         {
             Logger.LogInfo("In Awake for AssetToolTip");
             Debug.Log("AssetToolTip Plug-in loaded");
-            ModdingTales.ModdingUtils.Initialize(this, Logger);
+            ModdingTales.ModdingUtils.Initialize(this, Logger, "HolloFoxes'");
 
             var harmony = new Harmony(Guid);
             harmony.PatchAll();
