@@ -1,0 +1,10 @@
+{
+    "name": "AssetToolTipPlugin",
+    "version_number": "1.1.1",
+    "website_url": "https://github.com/TaleSpire-Modding/AssetToolTipPlugin",
+    "description": "See name of assets you are using within asset browser",
+    "dependencies": [
+        "bbepisTaleSpire-BepInExPack-5.4.10",
+	"brcoding-SetInjectionFlagPlugin-2.3.0"
+    ]
+}
