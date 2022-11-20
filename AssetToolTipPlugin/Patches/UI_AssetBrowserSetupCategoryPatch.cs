@@ -5,7 +5,7 @@ using UnityEngine.UI;
 namespace AssetToolTip.Patches
 {
     [HarmonyPatch(typeof(UI_SwitchButtonGroup), "Start")]
-    class UI_SwitchButtonGroupStartPatch
+    sealed class UI_SwitchButtonGroupStartPatch
     {
         private static List<MouseTextOnHover> items = new List<MouseTextOnHover>();
 

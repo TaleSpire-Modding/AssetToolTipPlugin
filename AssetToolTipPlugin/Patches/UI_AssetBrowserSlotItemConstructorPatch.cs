@@ -1,26 +1,22 @@
 ﻿using Bounce.Unmanaged;
 using HarmonyLib;
 using System.Collections.Generic;
-using System.Reflection;
+using SRF;
 
 namespace AssetToolTip.Patches
 {
     [HarmonyPatch(typeof(UI_AssetBrowserSlotItem),"Setup")]
-    class UI_AssetBrowserSlotItemConstructorPatch
+    sealed class UI_AssetBrowserSlotItemConstructorPatch
     {
         internal static Dictionary<NGuid, string> TextLookup = new Dictionary<NGuid, string>();
         internal static Dictionary<NGuid,MouseTextOnHover> Items = new Dictionary<NGuid, MouseTextOnHover>();
-        
+
         internal static void refreshText(object o)
         {
-            var keys = new List<NGuid>();
-            foreach (var key in Items.Keys)
+            foreach (var item in Items)
             {
-                if (Items[key] != null)
-                    SetText(Items[key], key);
-                else keys.Add(key);
+                SetText(item.Value,item.Key);
             }
-            foreach (var key in keys) Items.Remove(key);
         }
 
         private static void LoadDictionary()

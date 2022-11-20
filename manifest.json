@@ -1,10 +1,11 @@
 {
     "name": "AssetToolTipPlugin",
-    "version_number": "1.2.0",
+    "version_number": "1.2.1",
     "website_url": "https://github.com/TaleSpire-Modding/AssetToolTipPlugin",
     "description": "See name of assets you are using within asset browser",
     "dependencies": [
         "bbepisTaleSpire-BepInExPack-5.4.10",
-	"brcoding-SetInjectionFlagPlugin-2.3.0"
+	"brcoding-SetInjectionFlagPlugin-2.3.0",
+	"HolloFox_TS-Config_Manager-0.10.0"
     ]
 }

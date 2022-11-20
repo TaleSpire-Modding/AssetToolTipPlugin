@@ -4,7 +4,7 @@
     <TargetFramework>net48</TargetFramework>
     <AssemblyName>AssetToolTip</AssemblyName>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <PackageId>TaleSpire.$(AssemblyName)</PackageId>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <RepositoryType>git</RepositoryType>
@@ -30,6 +30,7 @@
   <ItemGroup>
     <PackageReference Include="TaleSpire" Version="0.0.4"></PackageReference>
     <PackageReference Include="Talespire.BepInEx" Version="5.4.11"></PackageReference>
+    <PackageReference Include="TaleSpire.ConfigurationManager" Version="0.10.0" />
     <PackageReference Include="TaleSpire.Sentry" Version="1.0.0" />
     <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="2.4.1" />
   </ItemGroup>
