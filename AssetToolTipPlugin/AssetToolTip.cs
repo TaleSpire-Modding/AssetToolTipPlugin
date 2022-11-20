@@ -12,7 +12,7 @@ namespace AssetToolTip
     {
         // constants
         private const string Guid = "org.hollofox.plugins.AssetToolTip";
-        private const string Version = "1.1.1.0";
+        private const string Version = "1.2.0.0";
         internal static ConfigEntry<bool> AssetsToolTip;
         internal static ConfigEntry<bool> CategoryToolTip;
         /// <summary>
