@@ -1,4 +1,4 @@
-name: Push to nuget feed on release
+name: Nuget Published
 
 on:
   push:
