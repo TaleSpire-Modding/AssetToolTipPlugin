@@ -1,4 +1,4 @@
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Configuration;
 using HarmonyLib;
 using PluginUtilities;
@@ -8,6 +8,7 @@ namespace AssetToolTip
 {
     [BepInPlugin(Guid, "Asset Tool Tip", Version)]
     [BepInDependency(SetInjectionFlag.Guid)]
+    [BepInDependency(ConfigurationManager.ConfigurationManager.Guid)]
     public sealed class AssetToolTip : BaseUnityPlugin
     {
         // constants
