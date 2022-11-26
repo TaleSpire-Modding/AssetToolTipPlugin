@@ -1,4 +1,6 @@
 # Asset Tool Tip Plugin
+[![Nuget Published](https://github.com/TaleSpire-Modding/AssetToolTipPlugin/actions/workflows/release.yml/badge.svg)](https://github.com/TaleSpire-Modding/AssetToolTipPlugin/actions/workflows/release.yml)
+
 This plugin allows you to view the name of an asset as you hover over it.
 
 ## Install
