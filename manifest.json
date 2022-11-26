@@ -1,6 +1,6 @@
 {
     "name": "AssetToolTipPlugin",
-    "version_number": "1.2.2",
+    "version_number": "1.2.3",
     "website_url": "https://github.com/TaleSpire-Modding/AssetToolTipPlugin",
     "description": "See then name of assets you are using within the asset browser",
     "dependencies": [

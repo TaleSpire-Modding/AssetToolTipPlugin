@@ -13,6 +13,7 @@ This is compatible with EAR & EAL, but is not required.
 
 ## Changelog
 ```
+- 1.2.3: Add dependency to remove race condition.
 - 1.2.2: Initial Pipeline deploy 
 - 1.2.1: Config Manager callback fixed
 - 1.2.0: 4.8 Framework update and Nuget Release
