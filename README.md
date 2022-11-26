@@ -9,6 +9,7 @@ By hovering over an asset's image in an asset browser, a tooltip will provide th
 This is compatible with EAR & EAL, but is not required.
 
 ## Changelog
+```
 - 1.2.2: Initial Pipeline deploy 
 - 1.2.1: Config Manager callback fixed
 - 1.2.0: 4.8 Framework update and Nuget Release
@@ -17,6 +18,7 @@ This is compatible with EAR & EAL, but is not required.
 - 1.0.2: Fix tooltip for Category.
 - 1.0.1: Added Tooltip to Category; Config (with future runtime support), some optimizations.
 - 1.0.0: Initial release
+```
 
 ## Shoutouts
 Shoutout to my Patreons on https://www.patreon.com/HolloFox recognising your
