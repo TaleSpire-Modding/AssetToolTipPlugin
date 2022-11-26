@@ -9,6 +9,7 @@ By hovering over an asset's image in an asset browser, a tooltip will provide th
 This is compatible with EAR & EAL, but is not required.
 
 ## Changelog
+- 1.2.2: Initial Pipeline deploy 
 - 1.2.1: Config Manager callback fixed
 - 1.2.0: 4.8 Framework update and Nuget Release
 - 1.1.1: CyberPunk update release
