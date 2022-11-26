@@ -35,7 +35,7 @@ jobs:
         run: |
           New-Item -Path 'thunderstore' -ItemType Directory
           Copy-Item -Path icon.png -Destination 'thunderstore'
-          Copy-Item -Path License.txt -Destination 'thunderstore'
+          Copy-Item -Path LICENSE.txt -Destination 'thunderstore'
           Copy-Item -Path manifest.json -Destination 'thunderstore'
           Copy-Item -Path README.md -Destination 'thunderstore'
           Copy-Item -Path AssetToolTipPlugin/bin/Release/net48/AssetToolTip.dll -Destination 'thunderstore'
