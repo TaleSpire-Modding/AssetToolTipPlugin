@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'manifest.json'
 
 jobs:
   Build_and_Release:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Setup Nuget
         uses: nuget/setup-nuget@v1
@@ -15,11 +17,43 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: build and publish
+      - name: Build and Publish
+        shell: pwsh
         run: |
           cd AssetToolTipPlugin
+          chmod +rwx update.ps1
+          ./update.ps1
           dotnet restore AssetToolTipPlugin.csproj
           dotnet build AssetToolTipPlugin.csproj --configuration Release
           cd bin/Release
           dotnet nuget push *.nupkg --api-key ${{ secrets.NUGET_TOKEN }} --source https://api.nuget.org/v3/index.json --skip-duplicate
           dotnet nuget push *.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/${{ github.repository_owner }} --skip-duplicate
+          
+      - name: Package for ThunderStore
+        id: package
+        shell: pwsh
+        run: |
+          New-Item -Path 'thunderstore' -ItemType Directory
+          Copy-Item -Path icon.png -Destination 'thunderstore'
+          Copy-Item -Path License.txt -Destination 'thunderstore'
+          Copy-Item -Path manifest.json -Destination 'thunderstore'
+          Copy-Item -Path README.md -Destination 'thunderstore'
+          Copy-Item -Path AssetToolTipPlugin/bin/Release/net48/AssetToolTip.dll -Destination 'thunderstore'
+          $json = Get-Content "manifest.json" | ConvertFrom-Json
+          $version = $json.version_number
+          $name = $json.name
+          $description = $json.description
+          echo "VERSION_NUMBER=${version}" >> $env:GITHUB_OUTPUT
+          echo "NAME=${name}" >> $env:GITHUB_OUTPUT
+          echo "DESCRIPTION=${description}" >> $env:GITHUB_OUTPUT
+      
+      - uses: GreenTF/upload-thunderstore-package@v2.2
+        with:
+          namespace: HolloFox_TS # the thunderstore 'team' to publish under
+          description: ${{steps.package.outputs.DESCRIPTION}} # Use the description from manifest
+          token: ${{ secrets.HOLLOFOX_TS_TOKEN }}
+          name: ${{steps.package.outputs.NAME}} # Use the name from manifest
+          version: ${{steps.package.outputs.VERSION_NUMBER}} # Use the version from manifest
+          community: talespire
+          path: thunderstore
+          deps: bbepisTaleSpire-BepInExPack@5.4.10 brcoding-SetInjectionFlagPlugin@2.3.0 HolloFox_TS-Config_Manager@0.10.0
