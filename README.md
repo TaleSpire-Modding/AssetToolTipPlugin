@@ -4,7 +4,8 @@
 This plugin allows you to view the name of an asset as you hover over it.
 
 ## Install
-Currently you need to either follow the build guide down below or use the R2ModMan. 
+Currently you need to use R2ModMan. 
+To use in your project, `dotnet add package TaleSpire.AssetToolTip`
 
 ## Usage
 By hovering over an asset's image in an asset browser, a tooltip will provide the asset's current name.
