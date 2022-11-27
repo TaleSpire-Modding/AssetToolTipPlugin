@@ -13,6 +13,7 @@ This is compatible with EAR & EAL, but is not required.
 
 ## Changelog
 ```
+- 1.2.5: Fix icon and readme deploy
 - 1.2.4: Pipeline upgrade, extra transparency.
 - 1.2.3: Add dependency to remove race condition.
 - 1.2.2: Initial Pipeline deploy 
