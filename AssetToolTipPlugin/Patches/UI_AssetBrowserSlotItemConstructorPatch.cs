@@ -1,7 +1,6 @@
 ﻿using Bounce.Unmanaged;
 using HarmonyLib;
 using System.Collections.Generic;
-using SRF;
 
 namespace AssetToolTip.Patches
 {
