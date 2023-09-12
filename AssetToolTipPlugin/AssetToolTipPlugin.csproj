@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <TargetFramework>net48</TargetFramework>
@@ -29,7 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="TaleSpire" Version="0.0.10"></PackageReference>
-    <PackageReference Include="Talespire.BepInEx" Version="5.4.11"></PackageReference>
+    <PackageReference Include="Talespire.BepInEx" Version="5.4.21"></PackageReference>
     <PackageReference Include="TaleSpire.ConfigurationManager" Version="0.11.0" />
     <PackageReference Include="TaleSpire.Sentry" Version="1.0.0" />
     <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="2.4.3" />
