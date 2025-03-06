@@ -13,6 +13,7 @@ This is compatible with EAR & EAL, but is not required.
 
 ## Changelog
 ```
+- 1.3.0: Simplify patch and fix tooltip. Removed Config Manager dependency
 - 1.2.6: Re-build for Attachment point update
 - 1.2.5: Fix icon and readme deploy
 - 1.2.4: Pipeline upgrade, extra transparency.
