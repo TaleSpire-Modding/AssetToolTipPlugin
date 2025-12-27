@@ -2,7 +2,7 @@
 
 namespace AssetToolTip.Patches
 {
-    [HarmonyPatch(typeof(UI_AssetBrowserSlotItem),"Setup")]
+    [HarmonyPatch(typeof(UI_AssetBrowserSlotItem),nameof(UI_AssetBrowserSlotItem.Setup))]
     sealed class UI_AssetBrowserSlotItemConstructorPatch
     {
 

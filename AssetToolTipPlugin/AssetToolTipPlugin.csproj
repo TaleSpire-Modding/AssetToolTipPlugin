@@ -26,11 +26,19 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="..\CHANGELOG.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\manifest.json">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="TaleSpire" Version="1.3.0"></PackageReference>
+    <PackageReference Include="TaleSpire" Version="1.5.0"></PackageReference>
     <PackageReference Include="Talespire.BepInEx" Version="5.4.22"></PackageReference>
-    <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="2.5.1" />
+    <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="3.1.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -1,0 +1,14 @@
+- 1.3.1: Fix deployment pipeline, update documentations, recompiled to keep up to date
+- 1.3.0: Simplify patch and fix tooltip. Removed Config Manager dependency
+- 1.2.6: Re-build for Attachment point update
+- 1.2.5: Fix icon and readme deploy
+- 1.2.4: Pipeline upgrade, extra transparency.
+- 1.2.3: Add dependency to remove race condition.
+- 1.2.2: Initial Pipeline deploy 
+- 1.2.1: Config Manager callback fixed
+- 1.2.0: 4.8 Framework update and Nuget Release
+- 1.1.1: CyberPunk update release
+- 1.1.0: Fix for HeroForge update. Semi-compatible with EAL.
+- 1.0.2: Fix tooltip for Category.
+- 1.0.1: Added Tooltip to Category; Config (with future runtime support), some optimizations.
+- 1.0.0: Initial release
