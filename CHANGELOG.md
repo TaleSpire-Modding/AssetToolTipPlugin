@@ -1,3 +1,4 @@
+- 1.3.3: Fix null reference exception that can occur if data is null when appending tooltip dynamically 
 - 1.3.2: DependencyUnityPlugins is now used and implement logic for unpatching
 - 1.3.1: Fix deployment pipeline, update documentations, recompiled to keep up to date
 - 1.3.0: Simplify patch and fix tooltip. Removed Config Manager dependency

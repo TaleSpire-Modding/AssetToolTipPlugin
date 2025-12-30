@@ -46,7 +46,8 @@ namespace AssetToolTip
                 if (mouseText != null)
                     continue;
 
-                UI_AssetLibraryCategory.DataItem data = field.GetValue(slotItem) as UI_AssetLibraryCategory.DataItem;
+                if (!(field.GetValue(slotItem) is UI_AssetLibraryCategory.DataItem data))
+                    continue;
                 slotItem.gameObject.AddComponent<MouseTextOnHover>().mouseHoverText = data.Name;
             }
         }
