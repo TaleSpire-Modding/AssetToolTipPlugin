@@ -23,11 +23,9 @@ namespace AssetToolTip
         protected override void OnAwake()
         {
             Logger.LogDebug("In Awake for AssetToolTip");
-            ModdingTales.ModdingUtils.AddPluginToMenuList(this, "HolloFoxes'");
-
+            
             harmony = new Harmony(Guid);
             harmony.PatchAll();
-
 
             // Add MouseTextOnHover to existing slot items
             Object[] slotItems = Resources.FindObjectsOfTypeAll(typeof(UI_AssetBrowserSlotItem));

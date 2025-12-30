@@ -5,6 +5,6 @@
     "description": "See then name of assets you are using within the asset browser",
     "dependencies": [
       "bbepisTaleSpire-BepInExPack-5.4.10",
-      "brcoding-SetInjectionFlagPlugin-3.3.3"
+      "brcoding-SetInjectionFlagPlugin-3.3.4"
     ]
 }
