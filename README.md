@@ -12,8 +12,11 @@ By hovering over an asset's image in an asset browser, a tooltip will provide th
 
 ## Shoutouts
 <!-- CONTRIBUTORS-START -->
-Shoutout to my past [Patreons](https://www.patreon.com/HolloFox) and [Discord](https://discord.gg/up6sWSjr) members, recognising your mighty support and contribution to my caffeine addiction:
+Shoutout to my past [Patreons](https://www.patreon.com/HolloFox) and [Discord](https://discord.gg/bxgZvBRVGf) members, recognising your mighty support, testing, feedback, and contribution to these projects:
 - [Demongund](https://www.twitch.tv/demongund) - Introduced me to TaleSpire
 - [Tales Tavern/MadWizard](https://talestavern.com/)
 - Joaqim Planstedt
+- Gonsplitters
+- Poap
+- Simsete
 <!-- CONTRIBUTORS-END -->
