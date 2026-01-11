@@ -8,7 +8,7 @@ namespace AssetToolTip
 {
     [BepInPlugin(Guid, Name, Version)]
     [BepInDependency(SetInjectionFlag.Guid)]
-    public sealed class AssetToolTip : DependencyUnityPlugin
+    public sealed class AssetToolTip : DependencyUnityPlugin<AssetToolTip>
     {
         // constants
         public const string Guid = "org.hollofox.plugins.AssetToolTip";
@@ -52,21 +52,23 @@ namespace AssetToolTip
 
         protected override void OnDestroyed()
         {
-            Logger.LogDebug("In OnDestroyed for AssetToolTip");
-            harmony.UnpatchSelf();
-            Logger.LogDebug("Unpatched all Harmony patches for AssetToolTip");
-
-            // Remove MouseTextOnHover from existing slot items
-            Object[] slotItems = Resources.FindObjectsOfTypeAll(typeof(UI_AssetBrowserSlotItem));
-            foreach (Object item in slotItems)
+            if (harmony != null)
             {
-                UI_AssetBrowserSlotItem slotItem = item as UI_AssetBrowserSlotItem;
-                if (slotItem != null)
+                harmony.UnpatchSelf();
+                Logger.LogDebug("Unpatched all Harmony patches for AssetToolTip");
+
+                // Remove MouseTextOnHover from existing slot items
+                Object[] slotItems = Resources.FindObjectsOfTypeAll(typeof(UI_AssetBrowserSlotItem));
+                foreach (Object item in slotItems)
                 {
-                    MouseTextOnHover mouseText = slotItem.GetComponent<MouseTextOnHover>();
-                    if (mouseText != null)
+                    UI_AssetBrowserSlotItem slotItem = item as UI_AssetBrowserSlotItem;
+                    if (slotItem != null)
                     {
-                        Object.Destroy(mouseText);
+                        MouseTextOnHover mouseText = slotItem.GetComponent<MouseTextOnHover>();
+                        if (mouseText != null)
+                        {
+                            Object.Destroy(mouseText);
+                        }
                     }
                 }
             }

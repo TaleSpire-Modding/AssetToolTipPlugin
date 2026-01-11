@@ -1,3 +1,4 @@
+- 1.3.4: migrate to DependencyUnityPlugins<T> to allow enable/disable the plugin without uninstalling it via chainloader
 - 1.3.3: Fix null reference exception that can occur if data is null when appending tooltip dynamically 
 - 1.3.2: DependencyUnityPlugins is now used and implement logic for unpatching
 - 1.3.1: Fix deployment pipeline, update documentations, recompiled to keep up to date
