@@ -1,3 +1,6 @@
+## Deprecated
+As of the Live Search Update, this mod will be deprecated as the feature has finally been implemented within TaleSpire.
+
 # Asset Tool Tip Plugin
 [![Nuget Published](https://github.com/TaleSpire-Modding/AssetToolTipPlugin/actions/workflows/release.yml/badge.svg)](https://github.com/TaleSpire-Modding/AssetToolTipPlugin/actions/workflows/release.yml)
 
